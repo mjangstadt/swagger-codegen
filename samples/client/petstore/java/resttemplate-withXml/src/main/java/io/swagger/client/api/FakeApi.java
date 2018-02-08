@@ -215,7 +215,7 @@ public class FakeApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public void testEndpointParameters(BigDecimal number, Double _double, String patternWithoutDelimiter, byte[] _byte, Integer integer, Integer int32, Long int64, Float _float, String string, byte[] binary, LocalDate date, OffsetDateTime dateTime, String password, String paramCallback) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         // verify the required parameter 'number' is set
         if (number == null) {
@@ -302,7 +302,7 @@ public class FakeApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public void testEnumParameters(List<String> enumFormStringArray, String enumFormString, List<String> enumHeaderStringArray, String enumHeaderString, List<String> enumQueryStringArray, String enumQueryString, Integer enumQueryInteger, Double enumQueryDouble) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         String path = UriComponentsBuilder.fromPath("/fake").build().toUriString();
         
@@ -382,7 +382,7 @@ public class FakeApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public void testJsonFormData(String param, String param2) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         // verify the required parameter 'param' is set
         if (param == null) {

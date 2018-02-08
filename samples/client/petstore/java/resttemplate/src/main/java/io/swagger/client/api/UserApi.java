@@ -153,7 +153,7 @@ public class UserApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public void deleteUser(String username) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         // verify the required parameter 'username' is set
         if (username == null) {
@@ -192,7 +192,7 @@ public class UserApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public User getUserByName(String username) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         // verify the required parameter 'username' is set
         if (username == null) {
@@ -231,7 +231,7 @@ public class UserApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public String loginUser(String username, String password) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         // verify the required parameter 'username' is set
         if (username == null) {
@@ -271,7 +271,7 @@ public class UserApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public void logoutUser() throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         String path = UriComponentsBuilder.fromPath("/user/logout").build().toUriString();
         

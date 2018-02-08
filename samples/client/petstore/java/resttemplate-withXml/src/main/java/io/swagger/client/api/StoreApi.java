@@ -54,7 +54,7 @@ public class StoreApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public void deleteOrder(String orderId) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         // verify the required parameter 'orderId' is set
         if (orderId == null) {
@@ -90,7 +90,7 @@ public class StoreApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public Map<String, Integer> getInventory() throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         String path = UriComponentsBuilder.fromPath("/store/inventory").build().toUriString();
         
@@ -121,7 +121,7 @@ public class StoreApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public Order getOrderById(Long orderId) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         // verify the required parameter 'orderId' is set
         if (orderId == null) {

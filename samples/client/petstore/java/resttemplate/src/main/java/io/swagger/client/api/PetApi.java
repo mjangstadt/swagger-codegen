@@ -91,7 +91,7 @@ public class PetApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public void deletePet(Long petId, String apiKey) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         // verify the required parameter 'petId' is set
         if (petId == null) {
@@ -132,7 +132,7 @@ public class PetApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public List<Pet> findPetsByStatus(List<String> status) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         // verify the required parameter 'status' is set
         if (status == null) {
@@ -169,7 +169,7 @@ public class PetApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public List<Pet> findPetsByTags(List<String> tags) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         // verify the required parameter 'tags' is set
         if (tags == null) {
@@ -207,7 +207,7 @@ public class PetApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public Pet getPetById(Long petId) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         // verify the required parameter 'petId' is set
         if (petId == null) {
@@ -282,7 +282,7 @@ public class PetApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public void updatePetWithForm(Long petId, String name, String status) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         // verify the required parameter 'petId' is set
         if (petId == null) {
@@ -328,7 +328,7 @@ public class PetApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public ModelApiResponse uploadFile(Long petId, String additionalMetadata, File file) throws RestClientException {
-        Object postBody = null;
+        Object postBody = new Object();
         
         // verify the required parameter 'petId' is set
         if (petId == null) {
