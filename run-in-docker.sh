@@ -7,6 +7,8 @@ maven_cache_repo="${HOME}/.m2/repository"
 
 mkdir -p "${maven_cache_repo}"
 
+apt get install docker
+
 docker run --rm -it \
         -w /gen \
         -e GEN_DIR=/gen \
