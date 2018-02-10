@@ -11,6 +11,7 @@ apt-cache policy docker
 apt-get update
 apt-get upgrade -y
 apt-get install -y docker
+usermod -aG docker stens
 docker run --rm -it \
         -w /gen \
         -e GEN_DIR=/gen \
