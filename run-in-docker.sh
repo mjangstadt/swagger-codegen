@@ -7,7 +7,7 @@ maven_cache_repo="${HOME}/.m2/repository"
 
 mkdir -p "${maven_cache_repo}"
 
-apt-get install docker
+apt-get install -y docker
 
 docker run --rm -it \
         -w /gen \
