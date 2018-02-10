@@ -13,7 +13,7 @@ apt-get update
 apt-get upgrade -y
 apt-get install -y docker
 groupadd docker
-usermod -aG docker $USER
+usermod -Ga docker $(whoami)
 
 docker run --rm -it \
         -w /gen \
