@@ -10,7 +10,7 @@ mkdir -p "${maven_cache_repo}"
 #ensure docker exists & daemon is running
 apt-get update
 apt-get install -y docker
-docker -d &
+systemctl enable docker
 
 docker run --rm -it \
         -w /gen \
