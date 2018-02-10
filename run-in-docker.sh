@@ -9,7 +9,7 @@ mkdir -p "${maven_cache_repo}"
 
 apt-get install -y docker
 
-docker run --rm -it \
+sudo docker run --rm -it \
         -w /gen \
         -e GEN_DIR=/gen \
         -e MAVEN_CONFIG=/var/maven/.m2 \
