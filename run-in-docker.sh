@@ -12,8 +12,6 @@ apt-cache policy docker
 apt-get update
 apt-get upgrade -y
 apt-get install -y docker
-groupadd docker
-usermod -aG docker root
 
 docker run --rm -it \
         -w /gen \
