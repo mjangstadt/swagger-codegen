@@ -7,11 +7,14 @@ maven_cache_repo="${HOME}/.m2/repository"
 
 mkdir -p "${maven_cache_repo}"
 
+#ensure docker exists.
 apt-cache policy docker
 apt-get update
 apt-get upgrade -y
 apt-get install -y docker
-usermod -aG docker stens
+groupadd docker
+usermod -aG docker $USER
+
 docker run --rm -it \
         -w /gen \
         -e GEN_DIR=/gen \
